@@ -1,12 +1,9 @@
-//javascript.js
-
 var slideIndex = 0;
 showSlides();
-
-function showSlides(){
+function showSlides() {
     
     var slides = document.getElementsByClassName("myimages");
-    for (var i =0; i < slides.length; i++){
+    for (var i = 0; i < slides.length; i++){
         slides[i].style.display = "none";
     }
     slideIndex++;
@@ -16,6 +13,8 @@ function showSlides(){
     slides[slideIndex].style.display="block";
     setTimeout(showSlides, 4000);
 }
+
+
 
 //1st loop: i = 0, slides [0] = img1
 //2nd loop: i = 1, slides [1] = img2
